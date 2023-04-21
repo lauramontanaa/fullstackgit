@@ -1,0 +1,157 @@
+<!--
+-Integers o enteros son números
+-No contienen decimales
+-Pueden ser positivos o negativos
+-Pueden contener números octales (Base 8)
+-Hexadecimales (Base 16) y binarios (Base 2)
+*/
+echo "<br />";
+echo "-------Enteros-------";
+echo "<br />";
+$puntaje = 120;
+echo $puntaje;
+
+echo "<br />";
+
+//Hexadecimal
+$numHexa = 0x6FFF6;
+echo $numHexa;
+
+//convertir un string a entero
+echo "<br />";
+$puntaje =20;
+$total = "120" + $puntaje ;
+
+echo $total;
+
+//Números negativos
+echo "<br />";
+$puntajeTotal = 8-20;
+echo $puntajeTotal;
+
+//Obtener el tamaño de un entero (Determinado por el sistema)
+echo "<br />";
+
+echo PHP_INT_SIZE;
+
+//Obtener el tamaño mínimo de un entero (Determinado por el sistema)
+echo "<br />";
+
+echo PHP_INT_MIN;
+
+//Obtener el tamaño máximo de un entero (Determinado por el sistema)
+echo "<br />";
+
+echo PHP_INT_MAX;
+
+echo "<br />";
+echo "-------Decimales-------";
+echo "<br />";
+
+/*
+-Definir decimales
+-Son números reales
+-Se escriben con punto(.)
+-Se pueden redondear con el metodo round
+-Pueden ser negativos
+
+*/
+$pagoTotal =102.45;
+echo "<br />";
+echo $pagoTotal;
+
+$saldoPendiente =-56.23;
+echo "<br />";
+echo $saldoPendiente;
+
+//Redondear decimales
+$puntaje = 48.51;
+echo "<br />";
+echo round($puntaje);
+
+
+//Comparar decimales con precisión 0.1
+$precio =1.87;
+$estimado = 1.97;
+echo "<br />";
+echo (abs($precio - $estimado) <0.1) ? "PAGA" :"NO PAGA";
+
+echo "<br />";
+echo "-------BOOLEANOS-------";
+echo "<br />";
+
+/*
+-true or false
+-No son case sensitive
+-Cuando se imprime con echo true=1 false=0
+*/
+
+$puedeAcceder = true;
+$validado= false;
+
+echo ($puedeAcceder) ? "Verdadero" : "Falso";
+echo "<br />";
+echo ($validado) ? "Verdadero" : "Falso";
+
+//Imprimiendo valores booleanos
+
+echo "<br />";
+echo "Verdadero" .$puedeAcceder . "<br />";
+echo "<br />";
+echo "Falso" .$validado . "<br />";
+
+//Como usar un string como booleano
+
+$estaLogeado = true;
+$inicioSesion ="Liliana chávez";
+echo ($estaLogeado && $inicioSesion) ? "Uusario Logeado" :"No se pudo logear";
+
+//Como usar un entero como booleano
+echo "<br />";
+
+$estaLogeado = true;
+$inicioSesion =5;
+echo ($estaLogeado && $inicioSesion) ? "Uusario Logeado" :"No se pudo logear";
+
+
+echo "<br />";
+echo "-------string-------";
+echo "<br />";
+
+/*
+-Definir strings
+-Los estring se definen en doble o comilla simple
+-Las comillas dobles pueden interpolar variables
+-Las comillas simples no  pueden interpolar variables
+*/
+
+$nombre = 'Liliana';
+$apellidos ='chávez';
+
+echo "$nombre y $apellidos";
+echo "<br />";
+
+$nombre2 =$nombre ." - " . $apellidos;
+echo $nombre2;
+
+
+
+echo "<br />";
+echo "-------NULL-------";
+echo "<br />";
+
+/*
+-Definir NULL
+-No es case sensitive NULL/null
+-Es usuado para inicializar una variable con valor vacio
+*/
+
+$documento=null;
+echo $documento;
+echo ($documento) ? "Contiene valor" : "Sin valor";
+
+//Metodo Is null
+echo "<br />";
+$documento = null;
+echo (!is_null($documento)) ? "Contiene valor" : "Sin valor";
+-->
